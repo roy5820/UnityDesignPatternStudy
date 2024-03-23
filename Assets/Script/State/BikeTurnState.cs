@@ -16,8 +16,6 @@ namespace Chapter.State
             
             if(_bikeController.CurrentSpeed > 0)
             {
-                Debug.Log(_turnDirection.x);
-                Debug.Log(_bikeController.turnDistance);
                 transform.Translate(_turnDirection * _bikeController.turnDistance);
             }
         }
